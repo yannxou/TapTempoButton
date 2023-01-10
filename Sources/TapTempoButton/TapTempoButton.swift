@@ -8,12 +8,24 @@
 import SwiftUI
 
 public struct TapTempoButton<Content: View>: View {
-    @StateObject private var tempoDetector = TempoDetector()
+    @StateObject private var tempoDetector: TempoDetector
     private let content: Content
     private let onTempoChange: (Double) -> Void
 
-    public init(onTempoChange: @escaping (Double) -> Void,
-                @ViewBuilder content: @escaping () -> Content) {
+    public init(tempoRange: ClosedRange<Double> = 20...999,
+                timeout: TimeInterval = 2,
+                minTaps: Int = 3,
+                roundDecimals: Int? = 1,
+                onTempoChange: @escaping (Double) -> Void,
+                @ViewBuilder content: @escaping () -> Content
+    ) {
+        _tempoDetector = StateObject(wrappedValue: TempoDetector(
+            tempoRange: tempoRange,
+            timeout: timeout,
+            minTaps: minTaps,
+            roundDecimals: roundDecimals
+        ))
+
         self.onTempoChange = onTempoChange
         self.content = content()
     }
