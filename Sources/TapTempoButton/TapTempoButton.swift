@@ -12,6 +12,14 @@ public struct TapTempoButton<Content: View>: View {
     private let content: Content
     private let onTempoChange: (Double) -> Void
 
+    /// Creates a TapTempoButton that calculates the BPM average based on the taps received.
+    /// - Parameters:
+    ///   - tempoRange: Defines the minimum and maximum tempo that can be detected.
+    ///   - timeout: Seconds of inactivity after which the ongoing detection will be restarted.
+    ///   - minTaps: Minimum number of taps required before sending values to the `onTempoChange` closure.
+    ///   - roundDecimals: Number of decimals to round the BPM to. Set to `0` for integer-only BPM (no decimals). Set to `nil` to disable rounding.
+    ///   - onTempoChange: The closure called providing the average BPM.
+    ///   - content: The content that will act as the tap button.
     public init(tempoRange: ClosedRange<Double> = 20...999,
                 timeout: TimeInterval = 2,
                 minTaps: Int = 3,
