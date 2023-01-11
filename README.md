@@ -8,6 +8,8 @@ The `TapTempoButton` takes a content closure so it can be customized. The whole 
 
 Rather than processing the touch events like a standard Button (on touch up) the view handles them on touch down so the button behaviour is more natural in a musical context. 
 
+![TapTempoButtonPreview](https://user-images.githubusercontent.com/5954961/211922448-172522bc-1a81-4b15-b7e7-606e54efdc59.gif)
+
 ## Usage
 
 Add the `TapTempoButton` to your View and customize it with the content closure.
