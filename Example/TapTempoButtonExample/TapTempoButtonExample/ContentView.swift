@@ -19,11 +19,11 @@ struct ContentView: View {
                 .font(.largeTitle.bold())
 
             TapTempoButton(onTempoChange: onTempoChange) {
-                Button(action: { }, label: {
+                Button(action: { }) {
                     Text("Tap")
                         .padding(.horizontal, 40)
                         .padding(.vertical, 10)
-                })
+                }
                 .buttonBorderShape(.capsule)
                 .buttonStyle(.bordered)
             }
