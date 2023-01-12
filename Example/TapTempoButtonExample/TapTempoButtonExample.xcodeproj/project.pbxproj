@@ -12,7 +12,37 @@
 		AF4982CA296DD39E0093FF91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF4982C9296DD39E0093FF91 /* Assets.xcassets */; };
 		AF4982CD296DD39E0093FF91 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF4982CC296DD39E0093FF91 /* Preview Assets.xcassets */; };
 		AF4982DA296DD67E0093FF91 /* TapTempoButton in Frameworks */ = {isa = PBXBuildFile; productRef = AF4982D9296DD67E0093FF91 /* TapTempoButton */; };
+		AF5CE0412970B9D000DDA9B8 /* TapTempoButtonWatchExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5CE0402970B9D000DDA9B8 /* TapTempoButtonWatchExampleApp.swift */; };
+		AF5CE0432970B9D000DDA9B8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5CE0422970B9D000DDA9B8 /* ContentView.swift */; };
+		AF5CE0452970B9D100DDA9B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF5CE0442970B9D100DDA9B8 /* Assets.xcassets */; };
+		AF5CE0482970B9D100DDA9B8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF5CE0472970B9D100DDA9B8 /* Preview Assets.xcassets */; };
+		AF5CE04B2970B9D100DDA9B8 /* TapTempoButtonWatchExample Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = AF5CE03E2970B9D000DDA9B8 /* TapTempoButtonWatchExample Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AF5CE0512970BA1300DDA9B8 /* TapTempoButton in Frameworks */ = {isa = PBXBuildFile; productRef = AF5CE0502970BA1300DDA9B8 /* TapTempoButton */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AF5CE0492970B9D100DDA9B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF4982BA296DD39D0093FF91 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF5CE03D2970B9D000DDA9B8;
+			remoteInfo = "TapTempoButtonWatchExample Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AF5CE04C2970B9D100DDA9B8 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				AF5CE04B2970B9D100DDA9B8 /* TapTempoButtonWatchExample Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AF4982C2296DD39D0093FF91 /* TapTempoButtonExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TapTempoButtonExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +52,11 @@
 		AF4982CC296DD39E0093FF91 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AF4982D7296DD4110093FF91 /* TapTempoButton */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = TapTempoButton; path = ../..; sourceTree = "<group>"; };
 		AF5CE01D2970B85B00DDA9B8 /* TapTempoButtonExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TapTempoButtonExample.entitlements; sourceTree = "<group>"; };
+		AF5CE03E2970B9D000DDA9B8 /* TapTempoButtonWatchExample Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TapTempoButtonWatchExample Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF5CE0402970B9D000DDA9B8 /* TapTempoButtonWatchExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapTempoButtonWatchExampleApp.swift; sourceTree = "<group>"; };
+		AF5CE0422970B9D000DDA9B8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AF5CE0442970B9D100DDA9B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF5CE0472970B9D100DDA9B8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +68,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AF5CE03B2970B9D000DDA9B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF5CE0512970BA1300DDA9B8 /* TapTempoButton in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -41,6 +84,7 @@
 			children = (
 				AF4982D6296DD4110093FF91 /* Packages */,
 				AF4982C4296DD39D0093FF91 /* TapTempoButtonExample */,
+				AF5CE03F2970B9D000DDA9B8 /* TapTempoButtonWatchExample Watch App */,
 				AF4982C3296DD39D0093FF91 /* Products */,
 				AF4982D8296DD67E0093FF91 /* Frameworks */,
 			);
@@ -50,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				AF4982C2296DD39D0093FF91 /* TapTempoButtonExample.app */,
+				AF5CE03E2970B9D000DDA9B8 /* TapTempoButtonWatchExample Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,6 +134,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AF5CE03F2970B9D000DDA9B8 /* TapTempoButtonWatchExample Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				AF5CE0402970B9D000DDA9B8 /* TapTempoButtonWatchExampleApp.swift */,
+				AF5CE0422970B9D000DDA9B8 /* ContentView.swift */,
+				AF5CE0442970B9D100DDA9B8 /* Assets.xcassets */,
+				AF5CE0462970B9D100DDA9B8 /* Preview Content */,
+			);
+			path = "TapTempoButtonWatchExample Watch App";
+			sourceTree = "<group>";
+		};
+		AF5CE0462970B9D100DDA9B8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AF5CE0472970B9D100DDA9B8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -99,10 +163,12 @@
 				AF4982BE296DD39D0093FF91 /* Sources */,
 				AF4982BF296DD39D0093FF91 /* Frameworks */,
 				AF4982C0296DD39D0093FF91 /* Resources */,
+				AF5CE04C2970B9D100DDA9B8 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				AF5CE04A2970B9D100DDA9B8 /* PBXTargetDependency */,
 			);
 			name = TapTempoButtonExample;
 			packageProductDependencies = (
@@ -110,6 +176,26 @@
 			);
 			productName = TapTempoButtonExample;
 			productReference = AF4982C2296DD39D0093FF91 /* TapTempoButtonExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AF5CE03D2970B9D000DDA9B8 /* TapTempoButtonWatchExample Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF5CE04F2970B9D100DDA9B8 /* Build configuration list for PBXNativeTarget "TapTempoButtonWatchExample Watch App" */;
+			buildPhases = (
+				AF5CE03A2970B9D000DDA9B8 /* Sources */,
+				AF5CE03B2970B9D000DDA9B8 /* Frameworks */,
+				AF5CE03C2970B9D000DDA9B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TapTempoButtonWatchExample Watch App";
+			packageProductDependencies = (
+				AF5CE0502970BA1300DDA9B8 /* TapTempoButton */,
+			);
+			productName = "TapTempoButtonWatchExample Watch App";
+			productReference = AF5CE03E2970B9D000DDA9B8 /* TapTempoButtonWatchExample Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -123,6 +209,9 @@
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					AF4982C1296DD39D0093FF91 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					AF5CE03D2970B9D000DDA9B8 = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
@@ -141,6 +230,7 @@
 			projectRoot = "";
 			targets = (
 				AF4982C1296DD39D0093FF91 /* TapTempoButtonExample */,
+				AF5CE03D2970B9D000DDA9B8 /* TapTempoButtonWatchExample Watch App */,
 			);
 		};
 /* End PBXProject section */
@@ -152,6 +242,15 @@
 			files = (
 				AF4982CD296DD39E0093FF91 /* Preview Assets.xcassets in Resources */,
 				AF4982CA296DD39E0093FF91 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF5CE03C2970B9D000DDA9B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF5CE0482970B9D100DDA9B8 /* Preview Assets.xcassets in Resources */,
+				AF5CE0452970B9D100DDA9B8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,7 +266,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AF5CE03A2970B9D000DDA9B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF5CE0432970B9D000DDA9B8 /* ContentView.swift in Sources */,
+				AF5CE0412970B9D000DDA9B8 /* TapTempoButtonWatchExampleApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AF5CE04A2970B9D100DDA9B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF5CE03D2970B9D000DDA9B8 /* TapTempoButtonWatchExample Watch App */;
+			targetProxy = AF5CE0492970B9D100DDA9B8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		AF4982CE296DD39E0093FF91 /* Debug */ = {
@@ -287,6 +403,7 @@
 		AF4982D1296DD39E0093FF91 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = TapTempoButtonExample/TapTempoButtonExample.entitlements;
@@ -320,6 +437,7 @@
 		AF4982D2296DD39E0093FF91 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = TapTempoButtonExample/TapTempoButtonExample.entitlements;
@@ -350,6 +468,64 @@
 			};
 			name = Release;
 		};
+		AF5CE04D2970B9D100DDA9B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TapTempoButtonWatchExample Watch App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = TapTempoButtonWatchExample;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.joanduat.TapTempoButtonExample;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joanduat.TapTempoButtonExample.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		AF5CE04E2970B9D100DDA9B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TapTempoButtonWatchExample Watch App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = TapTempoButtonWatchExample;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.joanduat.TapTempoButtonExample;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joanduat.TapTempoButtonExample.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -371,10 +547,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		AF5CE04F2970B9D100DDA9B8 /* Build configuration list for PBXNativeTarget "TapTempoButtonWatchExample Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF5CE04D2970B9D100DDA9B8 /* Debug */,
+				AF5CE04E2970B9D100DDA9B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		AF4982D9296DD67E0093FF91 /* TapTempoButton */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TapTempoButton;
+		};
+		AF5CE0502970BA1300DDA9B8 /* TapTempoButton */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = TapTempoButton;
 		};
