@@ -39,13 +39,23 @@ public struct TapTempoButton<Content: View>: View {
     }
 
     public var body: some View {
-        content
-            .onTouchDownGesture(tempoDetector.handleBeat)
+        contentButton
             .onReceive(tempoDetector.$detectedTempo) { tempo in
                 if let tempo {
                     onTempoChange(tempo)
                 }
             }
+    }
+
+    private var contentButton: some View {
+#if os(tvOS)
+        Button(action: tempoDetector.handleBeat) {
+            content
+        }
+#else
+        content
+            .onTouchDownGesture(tempoDetector.handleBeat)
+#endif
     }
 }
 

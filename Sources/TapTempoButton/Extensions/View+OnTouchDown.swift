@@ -5,6 +5,8 @@
 //  Created by Joan Duat on 22/12/22.
 //
 
+#if !os(tvOS)
+
 import SwiftUI
 
 extension View {
@@ -31,3 +33,5 @@ private struct OnTouchDownGestureModifier: ViewModifier {
                 })
     }
 }
+
+#endif
