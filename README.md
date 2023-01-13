@@ -22,6 +22,20 @@ TapTempoButton(onTempoChange: {
 }
 ```
 
+It can also be customized like a regular SwiftUI Button:
+
+```swift
+.buttonBorderShape(.capsule)
+.buttonStyle(.bordered)
+```
+
+or
+
+```swift
+.buttonStyle(MyButtonStyle())
+```
+
+
 ### Configuration
 
 The following properties can be configured on initialization:
@@ -39,7 +53,7 @@ The following properties can be configured on initialization:
 
 ## Support
 
-The idea for this library appeared while working on the app [Vetro: Visual Metronome](https://apps.apple.com/app/vetro-visual-metronome/id1637121079) for iOS/macOS. If you like it you can support by buying any of [our apps](https://apps.apple.com/es/developer/natalia-artigas/id957299596).
+The idea for this library appeared while working on the app [Vetro: Visual Metronome](https://apps.apple.com/app/vetro-visual-metronome/id1637121079) for iOS/macOS. If you like it you can support us by buying any of [our apps](https://apps.apple.com/es/developer/natalia-artigas/id957299596).
 
 ## License
 

@@ -22,7 +22,6 @@ struct ContentView: View {
                 Text("Tap")
                     .padding(.horizontal, 40)
                     .padding(.vertical, 10)
-//                    .focusable(true)
             }
         }
     }

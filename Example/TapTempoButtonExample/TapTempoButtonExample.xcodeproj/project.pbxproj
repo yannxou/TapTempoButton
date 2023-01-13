@@ -28,6 +28,7 @@
 		AF5CE0712970C6F300DDA9B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF5CE0702970C6F300DDA9B8 /* Assets.xcassets */; };
 		AF5CE0742970C6F300DDA9B8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF5CE0732970C6F300DDA9B8 /* Preview Assets.xcassets */; };
 		AF5CE07A2970C75800DDA9B8 /* TapTempoButton in Frameworks */ = {isa = PBXBuildFile; productRef = AF5CE0792970C75800DDA9B8 /* TapTempoButton */; };
+		AFBC22382971713D00B5048E /* TapButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBC22372971713D00B5048E /* TapButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		AF5CE0702970C6F300DDA9B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF5CE0732970C6F300DDA9B8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AF5CE0752970C6F300DDA9B8 /* TapTempoMacExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TapTempoMacExample.entitlements; sourceTree = "<group>"; };
+		AFBC22372971713D00B5048E /* TapButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapButtonStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				AF5CE06C2970C6F200DDA9B8 /* TapTempoMacExampleApp.swift */,
+				AFBC22372971713D00B5048E /* TapButtonStyle.swift */,
 				AF5CE06E2970C6F200DDA9B8 /* ContentView.swift */,
 				AF5CE0702970C6F300DDA9B8 /* Assets.xcassets */,
 				AF5CE0752970C6F300DDA9B8 /* TapTempoMacExample.entitlements */,
@@ -435,6 +438,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF5CE06F2970C6F200DDA9B8 /* ContentView.swift in Sources */,
+				AFBC22382971713D00B5048E /* TapButtonStyle.swift in Sources */,
 				AF5CE06D2970C6F200DDA9B8 /* TapTempoMacExampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
