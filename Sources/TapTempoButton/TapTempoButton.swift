@@ -7,6 +7,10 @@
 
 import SwiftUI
 
+#if os(iOS)
+import UIKit
+#endif
+
 public struct TapTempoButton<Content: View>: View {
     @StateObject private var tempoDetector: TempoDetector
     private let content: Content
@@ -47,17 +51,32 @@ public struct TapTempoButton<Content: View>: View {
             }
     }
 
-    private var contentButton: some View {
+    @ViewBuilder private var contentButton: some View {
 #if os(tvOS) || os(macOS)
+        touchUpButton
+#elseif os(iOS)
+        if UIDevice.current.userInterfaceIdiom == .mac {
+            // Catalyst app with 'optimize for mac' setting enabled
+            touchUpButton
+        } else {
+            touchDownButton
+        }
+#else
+        touchDownButton
+#endif
+    }
+
+    private var touchUpButton: some View {
         Button(action: tempoDetector.handleBeat) {
             content
         }
-#else
+    }
+
+    private var touchDownButton: some View {
         Button(action: { }) {
             content
         }
         .onTouchDownGesture(tempoDetector.handleBeat)
-#endif
     }
 }
 

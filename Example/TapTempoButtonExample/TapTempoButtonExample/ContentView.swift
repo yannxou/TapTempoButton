@@ -20,11 +20,8 @@ struct ContentView: View {
 
             TapTempoButton(onTempoChange: onTempoChange) {
                 Text("Tap")
-                    .padding(.horizontal, 40)
-                    .padding(.vertical, 10)
             }
-            .buttonBorderShape(.capsule)
-            .buttonStyle(.bordered)
+            .buttonStyle(TapButtonStyle())
         }
     }
 
@@ -38,3 +35,6 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+
+

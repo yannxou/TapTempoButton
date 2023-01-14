@@ -21,7 +21,7 @@ struct ContentView: View {
             TapTempoButton(onTempoChange: onTempoChange) {
                 Text("Tap")
             }
-            .buttonStyle(TapButtonStyle(tempo: tempo))
+            .buttonStyle(AnimatedTapButtonStyle(tempo: tempo))
         }
     }
 

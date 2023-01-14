@@ -28,7 +28,8 @@
 		AF5CE0712970C6F300DDA9B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF5CE0702970C6F300DDA9B8 /* Assets.xcassets */; };
 		AF5CE0742970C6F300DDA9B8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF5CE0732970C6F300DDA9B8 /* Preview Assets.xcassets */; };
 		AF5CE07A2970C75800DDA9B8 /* TapTempoButton in Frameworks */ = {isa = PBXBuildFile; productRef = AF5CE0792970C75800DDA9B8 /* TapTempoButton */; };
-		AFBC22382971713D00B5048E /* TapButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBC22372971713D00B5048E /* TapButtonStyle.swift */; };
+		AFBC22382971713D00B5048E /* AnimatedTapButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBC22372971713D00B5048E /* AnimatedTapButtonStyle.swift */; };
+		AFBC26E12972C14F00B5048E /* TapButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBC26E02972C14F00B5048E /* TapButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,7 +80,8 @@
 		AF5CE0702970C6F300DDA9B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF5CE0732970C6F300DDA9B8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AF5CE0752970C6F300DDA9B8 /* TapTempoMacExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TapTempoMacExample.entitlements; sourceTree = "<group>"; };
-		AFBC22372971713D00B5048E /* TapButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapButtonStyle.swift; sourceTree = "<group>"; };
+		AFBC22372971713D00B5048E /* AnimatedTapButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedTapButtonStyle.swift; sourceTree = "<group>"; };
+		AFBC26E02972C14F00B5048E /* TapButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapButtonStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 			children = (
 				AF5CE01D2970B85B00DDA9B8 /* TapTempoButtonExample.entitlements */,
 				AF4982C5296DD39D0093FF91 /* TapTempoButtonExampleApp.swift */,
+				AFBC26E02972C14F00B5048E /* TapButtonStyle.swift */,
 				AF4982C7296DD39D0093FF91 /* ContentView.swift */,
 				AF4982C9296DD39E0093FF91 /* Assets.xcassets */,
 				AF4982CB296DD39E0093FF91 /* Preview Content */,
@@ -219,7 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				AF5CE06C2970C6F200DDA9B8 /* TapTempoMacExampleApp.swift */,
-				AFBC22372971713D00B5048E /* TapButtonStyle.swift */,
+				AFBC22372971713D00B5048E /* AnimatedTapButtonStyle.swift */,
 				AF5CE06E2970C6F200DDA9B8 /* ContentView.swift */,
 				AF5CE0702970C6F300DDA9B8 /* Assets.xcassets */,
 				AF5CE0752970C6F300DDA9B8 /* TapTempoMacExample.entitlements */,
@@ -411,6 +414,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF4982C8296DD39D0093FF91 /* ContentView.swift in Sources */,
+				AFBC26E12972C14F00B5048E /* TapButtonStyle.swift in Sources */,
 				AF4982C6296DD39D0093FF91 /* TapTempoButtonExampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,7 +442,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF5CE06F2970C6F200DDA9B8 /* ContentView.swift in Sources */,
-				AFBC22382971713D00B5048E /* TapButtonStyle.swift in Sources */,
+				AFBC22382971713D00B5048E /* AnimatedTapButtonStyle.swift in Sources */,
 				AF5CE06D2970C6F200DDA9B8 /* TapTempoMacExampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -580,6 +584,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TapTempoButtonExample/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -599,7 +604,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Debug;
 		};
@@ -614,6 +619,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TapTempoButtonExample/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -633,7 +639,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Release;
 		};

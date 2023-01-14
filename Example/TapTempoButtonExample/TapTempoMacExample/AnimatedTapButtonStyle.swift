@@ -1,5 +1,5 @@
 //
-//  TapButtonStyle.swift
+//  AnimatedTapButtonStyle.swift
 //  TapTempoMacExample
 //
 //  Created by Joan Duat on 13/1/23.
@@ -8,7 +8,7 @@
 import SwiftUI
 import Combine
 
-struct TapButtonStyle: ButtonStyle {
+struct AnimatedTapButtonStyle: ButtonStyle {
     let tempo: Double
     @State private var buttonBackground: Color = .gray.opacity(0.25)
     private var timer: Publishers.Autoconnect<Timer.TimerPublisher>
