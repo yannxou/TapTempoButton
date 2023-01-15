@@ -1,5 +1,8 @@
 # TapTempoButton
 
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fyannxou%2FTapTempoButton%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/yannxou/TapTempoButton)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fyannxou%2FTapTempoButton%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/yannxou/TapTempoButton)
+
 A SwiftUI View that easily brings tap tempo functionality to music apps.
 
 ## How it works
