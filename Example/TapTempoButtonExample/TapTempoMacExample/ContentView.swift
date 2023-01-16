@@ -22,6 +22,7 @@ struct ContentView: View {
                 Text("Tap")
             }
             .buttonStyle(AnimatedTapButtonStyle(tempo: tempo))
+            .keyboardShortcut("t")
         }
     }
 

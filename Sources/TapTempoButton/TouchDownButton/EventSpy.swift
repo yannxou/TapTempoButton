@@ -11,6 +11,7 @@ import SwiftUI
 
 class EventSpyView: NSView {
     var onMouseDown: ((NSEvent) -> Void)?
+    var onMouseUp: ((NSEvent) -> Void)?
 
     init() {
         super.init(frame: .zero)
@@ -24,10 +25,16 @@ class EventSpyView: NSView {
         onMouseDown?(event)
         super.mouseDown(with: event)
     }
+
+    override func mouseUp(with event: NSEvent) {
+        onMouseUp?(event)
+        super.mouseUp(with: event)
+    }
 }
 
 struct EventSpy: NSViewRepresentable {
-    var onMouseDown: (NSEvent) -> Void
+    var onMouseDown: ((NSEvent) -> Void)?
+    var onMouseUp: ((NSEvent) -> Void)?
 
     func makeNSView(context: Context) -> EventSpyView {
         let view = EventSpyView()
@@ -36,6 +43,7 @@ struct EventSpy: NSViewRepresentable {
 
     func updateNSView(_ nsView: EventSpyView, context: Context) {
         nsView.onMouseDown = onMouseDown
+        nsView.onMouseUp = onMouseUp
     }
 }
 

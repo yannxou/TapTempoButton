@@ -22,6 +22,7 @@ struct ContentView: View {
                 Text("Tap")
             }
             .buttonStyle(TapButtonStyle())
+            .keyboardShortcut("t", modifiers: [.shift])
         }
     }
 

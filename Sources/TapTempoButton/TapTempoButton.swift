@@ -53,16 +53,14 @@ public struct TapTempoButton<Content: View>: View {
 
     @ViewBuilder private var contentButton: some View {
 #if os(tvOS)
-        // touchUpButton
+        // touchUpButton:
         Button(action: tempoDetector.handleBeat) {
             content
         }
 #else
-        // touchDownButton
-        Button(action: { }) {
+        TouchDownButton(action: tempoDetector.handleBeat) {
             content
         }
-        .onTouchDownGesture(tempoDetector.handleBeat)
 #endif
     }
 }
