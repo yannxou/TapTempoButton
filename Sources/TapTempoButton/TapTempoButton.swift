@@ -52,31 +52,18 @@ public struct TapTempoButton<Content: View>: View {
     }
 
     @ViewBuilder private var contentButton: some View {
-#if os(tvOS) || os(macOS)
-        touchUpButton
-#elseif os(iOS)
-        if UIDevice.current.userInterfaceIdiom == .mac {
-            // Catalyst app with 'optimize for mac' setting enabled
-            touchUpButton
-        } else {
-            touchDownButton
-        }
-#else
-        touchDownButton
-#endif
-    }
-
-    private var touchUpButton: some View {
+#if os(tvOS)
+        // touchUpButton
         Button(action: tempoDetector.handleBeat) {
             content
         }
-    }
-
-    private var touchDownButton: some View {
+#else
+        // touchDownButton
         Button(action: { }) {
             content
         }
         .onTouchDownGesture(tempoDetector.handleBeat)
+#endif
     }
 }
 

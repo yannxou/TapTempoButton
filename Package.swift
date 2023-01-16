@@ -5,7 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "TapTempoButton",
-    platforms: [.iOS(.v14), .macCatalyst(.v14), .macOS(.v11), .tvOS(.v16), .watchOS(.v7)],
+    platforms: [.iOS(.v14), .macCatalyst(.v14), .macOS(.v12), .tvOS(.v16), .watchOS(.v7)],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(

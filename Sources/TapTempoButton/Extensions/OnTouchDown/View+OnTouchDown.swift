@@ -20,6 +20,14 @@ private struct OnTouchDownGestureModifier: ViewModifier {
     let callback: () -> Void
 
     func body(content: Content) -> some View {
+#if os(macOS)
+        content
+            .overlay {
+                EventSpy(onMouseDown: { _ in
+                    self.callback()
+                })
+            }
+#else
         content
             .simultaneousGesture(DragGesture(minimumDistance: 0)
                 .onChanged { _ in
@@ -31,6 +39,7 @@ private struct OnTouchDownGestureModifier: ViewModifier {
                 .onEnded { _ in
                     self.tapped = false
                 })
+#endif
     }
 }
 
